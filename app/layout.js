@@ -1,16 +1,25 @@
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Getstarted from "@/components/getstarted/page";
+import Whyus from "@/components/whyus/page";
+import Clientpage from "@/components/clientpage/page";
+import LeadtosignuporUpOrIn from "@/components/leadtosignuporin/page";
+import Signinclient from "@/app/signinclient/page";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Lawyerdiscription from "@/components/lawyerdiscription/page";
+import SignupLawyer from "@/app/signupclient/page";
+import WhyThisTypePlatforme from "@/components/whyus/page";
+import WhyUs from "@/components/clientpage/page";
+import Consigerjuridique from "@/components/consigerjuridique/page";
+import Avocatpage from "@/components/avocat/page";
+import UserAfterSignUp from "@/components/userAfterSignUp/page";
+import ListesDesConsegerJuridique from "@/app/listesDesConsegerJuridique/page";
+import Signinavocat from "@/app/sgnInAvocat/page";
+import Avocatsettingpage from "@/components/avocatSetingPage/page";
+
+
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,11 +28,24 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html className="" lang="en">
+      <body className="">
+      {/* <Getstarted></Getstarted> */}
+      {/* <WhyThisTypePlatforme></WhyThisTypePlatforme> */}
+     {/* <WhyUs></WhyUs> */}
+     {/* <LeadtosignuporUpOrIn></LeadtosignuporUpOrIn> */}
+     {/* <Signinclient></Signinclient> */}
+     {/* <SignupLawyer></SignupLawyer>
+
+     <Lawyerdiscription></Lawyerdiscription>
+     <Consigerjuridique></Consigerjuridique>
+     <Avocatpage></Avocatpage>
+     <UserAfterSignUp></UserAfterSignUp>
+     <ListesDesConsegerJuridique></ListesDesConsegerJuridique>
+<Signinavocat></Signinavocat>
+<Avocatsettingpage></Avocatsettingpage> */}
+
+      {children}
       </body>
     </html>
   );
