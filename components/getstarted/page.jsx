@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
-import Image from "next/image";
+
 import './styles.css'
-import image from "@/public/image1.jpg"
+
 import { useRouter } from "next/navigation";
 const Getstarted = () => {
   const router = useRouter();

@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from "@/public/image3.jpg";
+import image1 from "./public/image3.jpg";
 import Image from "next/image";
 import "./styles.css"
 const WhyUs

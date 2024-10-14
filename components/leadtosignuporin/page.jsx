@@ -2,7 +2,7 @@
 import React from "react";
 import "./styles.css";
 import Image from "next/image";
-import image2 from "@/public/image2.jpg";
+import image2 from "./public/image2.jpg";
 
 import { useRouter } from "next/navigation";
 
